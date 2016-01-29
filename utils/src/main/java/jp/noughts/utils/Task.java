@@ -46,11 +46,9 @@ import android.os.AsyncTask;
 
 public class Task<T> {
 
-    private CustomAsyncTask mCustomAsyncTask;
-
     // Class constructor
     public Task(Job job) {
-        mCustomAsyncTask = new CustomAsyncTask(job);
+        CustomAsyncTask mCustomAsyncTask = new CustomAsyncTask(job);
         mCustomAsyncTask.execute();
     }
 
@@ -91,8 +89,8 @@ public class Task<T> {
 
     // The Job interface
     public interface Job<T> {
-        public T onStart() throws Exception ;
-        public void onComplete(T object);
-        public void onError(Exception e);
+        T onStart() throws Exception;
+        void onComplete(T object);
+        void onError(Exception e);
     }
 }

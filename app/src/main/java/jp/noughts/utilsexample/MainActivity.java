@@ -1,5 +1,6 @@
 package jp.noughts.utilsexample;
 
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
         Logging.enabled = true;
         Logging.info("hoge");
-
+        
     }
 }
