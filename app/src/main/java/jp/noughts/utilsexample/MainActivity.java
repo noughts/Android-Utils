@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
         Logging.enabled = true;
         Logging.info("hoge");
-        
+
     }
 }
