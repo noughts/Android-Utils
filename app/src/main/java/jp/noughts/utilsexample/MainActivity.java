@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import jp.noughts.utils.Logging;
+import jp.noughts.utils.Task;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         Logging.enabled = true;
         Logging.info("hoge");
+
     }
 }
